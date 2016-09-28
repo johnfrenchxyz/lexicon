@@ -21,6 +21,8 @@
     </section>
 
     <nav id="sticker">
+        <!-- Small Screen Menu Trigger -->
+        <div class="show-for-small-only"><a href="#" class="menu-trigger" >Menu</a></div>
         <ul>
             <li><a href="#anatomy">Knife Anatomy</a></li>
             <li><a href="#process">Process</a></li>
@@ -360,9 +362,6 @@
                         <img src='images/gallery/thumbnails/25.jpg' alt=''/>
                     </a>
 
-
-
-
                 </div>
             </div>
         </div>
@@ -396,10 +395,10 @@
     <script type="text/javascript" src="js/fresco/fresco.js"></script>
     <script>
         $(window).load(function(){
-          $("#sticker").sticky({ topSpacing: 0, center:true, className:"hey" });
+          $("#sticker").sticky({ topSpacing: 0, className:"hey" });
         });
         $(window).on('resize', function(){
-            $("#sticker").sticky('update');
+
         });
     </script>
 </body>
