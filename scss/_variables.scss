@@ -1,0 +1,51 @@
+/*
+    VARIABLES FOR KNIFE LEXICON
+*/
+
+$purple: #4b485c;
+$dark-purple: #323040;
+$white: #ffffff;
+
+// Typography
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Quattrocento';
+$quattrocento: 'Quattrocento', serif;
+$open-sans: 'Open Sans', sans-serif;
+$regular: 400;
+$bold: 700;
+
+h1, h2 {
+    font-family: $quattrocento;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.word {
+    font-family: $quattrocento;
+    color: $purple;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.definition {
+    font-family: $open-sans;
+}
+
+a {
+    color: $purple;
+    text-decoration: underline;
+    transition: 200ms ease;
+    &:hover {
+        color: $dark-purple;
+    }
+    &:visited {
+        color: $purple;
+    }
+    &:active {
+        color: purple;
+    }
+    &:focus {
+        color: $purple;
+    }
+}
